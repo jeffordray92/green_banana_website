@@ -1,0 +1,103 @@
+.home-menu {
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    width: auto;
+    
+    .pure-menu-heading{
+        width: 70px;
+        height: 70px;
+        float: left;
+        position: relative;
+        background: #fff;
+        padding: 0;
+        display: block;
+
+        &.logo{
+            background: #fff url(../img/logo.png) no-repeat;
+            background-position: center center;
+            background-size: 50px;
+        }
+
+        &.book{
+            background: #077f42;
+            color: #fff;
+            font-weight: 600;
+            text-align: center;
+            line-height: 14px;
+
+            span{
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                padding-top: 17px;
+                display: block;
+                padding-left: 4px;
+                font-family: 'Lora', serif;
+            }
+
+            small{
+                letter-spacing: 4px;
+                font-size: 65%;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.header{
+    .pure-menu-heading{
+        width: 70px;
+        height: 70px;
+        float: left;
+        background: #fff;
+        padding: 0;
+        display: block;
+
+        &.menu-link{
+            background: none;
+            white-space: normal;
+            right: 0;
+            position: fixed;
+            z-index: 9999999;
+
+            span{
+                background: #fff;
+                height: 2px;
+                width: 30px;
+                display: block;
+                margin: 0 auto;
+              -webkit-transition: all 0.2s ease-in-out;
+              -o-transition: all 0.2s ease-in-out;
+              transition: all 0.2s ease-in-out;
+            }
+
+            span:first-child{
+                margin-top: 24px;
+            }
+
+            span:nth-child(2){
+                margin: 7px auto;
+            }
+
+            span:last-child{
+                
+            }
+
+            &.active {
+
+                span:first-child{
+                    transform: translate(0px,8px) rotate(45deg);
+                }
+
+                span:nth-child(2){
+                    transform: translate(0px,-1px) rotate(45deg);
+                }
+
+                span:last-child{
+                    transform: translate(0px,-10px) rotate(-45deg);
+                }
+
+            }
+        }
+    }
+}

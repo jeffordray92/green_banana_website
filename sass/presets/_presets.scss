@@ -1,0 +1,145 @@
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Lora', serif;
+	color: #222;
+}
+
+div, p, table, a{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #222;
+}
+
+h2{
+	&.lined{
+		width: 50%;
+		font-size: 20px;
+		position: relative;
+		margin: 60px auto;
+		letter-spacing: 0;
+		font-weight: normal;
+		color: #077f42;
+
+		&.dark{
+		    &:before{
+		        background: #077f42;
+		    }
+
+		    &:after{
+		        background: #077f42;
+		    }
+		}
+
+		&.light{
+			color: #fff;
+		    &:before{
+		        background: #fff;
+		    }
+
+		    &:after{
+		        background: #fff;
+		    }
+		}
+
+	    &:before{
+	        position: absolute;
+	        content: " ";
+	        height: 2px;
+	        width: 40%;
+	        left: 0;
+	        background: #fff;
+	        top: 10px;
+	    }
+
+	    &:after{
+	        position: absolute;
+	        content: " ";
+	        height: 2px;
+	        width: 40%;
+	        right: 0;
+	        background: #fff;
+	        top: 12px;
+	    }
+
+	}
+}
+
+
+.dark{
+	color: #222;
+}
+
+.light{
+	color: #fff;
+}
+
+.pure-button{
+
+	&.flat{
+		border-radius: 0;
+	    text-align: center;
+	    font-size: 12px;
+	    text-transform: uppercase;
+	    font-weight: 400;
+	    letter-spacing: 4px;
+
+		&-hover, &:hover, &:focus{
+			border-radius: 0;
+		}
+
+		&.green{   
+		  	background: none;
+		    color: #077f42;
+		    position: relative;
+		    padding: 20px 40px; 
+		    border: 2px solid #077f42;
+		    letter-spacing: 2px;
+			&:after{
+				content: " ";
+				height: 2px;
+				width: 0;
+				background: #077f42;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+			  	-webkit-transition: all 0.2s ease-in-out;
+			  	-o-transition: all 0.2s ease-in-out;
+			  	transition: all 0.2s ease-in-out;
+			}
+
+			&:hover{
+
+				&:after{
+					width: 100%;
+				}
+			}
+
+			&:focus{
+				box-shadow: none;
+			}
+		}
+
+		&.solid-green{
+			-webkit-transition: all 0.2s ease-in-out;
+			-o-transition: all 0.2s ease-in-out;
+			transition: all 0.2s ease-in-out;
+			background: #077f42;
+			border: 2px solid #077f42;
+			color: #fff;
+
+			&:hover, &:focus{
+				background: #fff;
+				border: 2px solid #077f42;
+				color: #077f42;
+
+				&:after{
+					width: 100%;
+				}
+			}
+
+			&:focus{
+				box-shadow: none;
+			}
+		}
+
+	}
+}

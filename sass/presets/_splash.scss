@@ -1,0 +1,83 @@
+.splash{
+    height: 300px;
+}
+.splash-container{
+	background:  url(../img/bg/pattern.png) repeat, url(../img/bg/open.jpg)  no-repeat;
+	background-size:  3px 3px, cover;
+}
+
+.splash-small{
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 20px;
+    text-transform: none;
+    color: #fff;
+
+    &:before{
+        position: absolute;
+        content: " ";
+        height: 2px;
+        width: 40%;
+        left: 0;
+        background: #fff;
+        top: 10px;
+    }
+
+    &:after{
+        position: absolute;
+        content: " ";
+        height: 2px;
+        width: 40%;
+        right: 0;
+        background: #fff;
+        top: 12px;
+    }
+}
+.splash-logo{
+	width: 150px;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.splash-head{
+    border: none;
+    border-radius: 0;
+    padding: 10px 0px 16px;
+    font-size: 400%;
+    margin: 0;
+    border-bottom: 2px solid #fff;
+    font-family: 'Lustria', serif;
+    letter-spacing: 0.3em;
+
+    strong{
+        font-weight: normal;
+        font-size: 120%;
+    }
+}
+
+.splash-subhead{
+	text-transform: none;
+    font-family: 'Lustria', serif;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+}
+
+.discover{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+    width: 150px;
+    letter-spacing: 4px;
+    padding-left: 4px;
+}
