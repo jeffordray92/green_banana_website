@@ -1,116 +1,189 @@
-/*Acco*/
-.ac-container {
-    max-width: 400px;
+.info-text {
+  text-align: left;
+  width: 100%;
 }
 
-.ac-container label {
-    height: 30px !important;
-    line-height: 21px !important;
-    font-size: 12px !important;
-    font-family: 'Open Sans','Arial Narrow',Arial,sans-serif !important;
-    padding: 5px 20px;
-    position: relative;
-    z-index: 20;
-    display: block;
-    height: 30px;
-    cursor: pointer;
-    color: #777;
-    text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
-    line-height: 33px;
-    font-size: 19px;
-    background: #fff;
-    background: -moz-linear-gradient(top,#fff 1%,#eaeaea 100%);
-    background: -webkit-gradient(linear,left top,left bottom,color-stop(1%,#fff),color-stop(100%,#eaeaea));
-    background: -webkit-linear-gradient(top,#fff 1%,#eaeaea 100%);
-    background: -o-linear-gradient(top,#fff 1%,#eaeaea 100%);
-    background: -ms-linear-gradient(top,#fff 1%,#eaeaea 100%);
-    background: linear-gradient(top,#fff 1%,#eaeaea 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff',endColorstr='#eaeaea',GradientType=0 );
-    box-shadow: 0 0 0 1px rgba(155,155,155,0.3),1px 0 0 rgba(255,255,255,0.9) inset,0 2px 2px rgba(0,0,0,0.1);
-    font-size: 12px;
-    height: 30px;
-    line-height: 20px;
+
+.form-group {
+  margin-bottom: 20px;
 }
 
-.ac-container {
+h2.heading {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: left;
+  color: #506982;
+  border-bottom: 1px solid #506982;
+  padding-bottom: 3px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  text-align: left;
+  position: relative;
+}
+.controls input[type="text"],
+.controls input[type="email"],
+.controls input[type="number"],
+.controls input[type="date"],
+.controls input[type="tel"],
+.controls textarea,
+.controls button,
+.controls select {
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #c6c6c6;
+  width: 100%;
+  margin-bottom: 18px;
+  color: #888;
+  font-family: 'Lato', 'sans-serif';
+  font-size: 16px;
+  font-weight: 300;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.controls input[type="text"]:focus, .controls input[type="text"]:hover,
+.controls input[type="email"]:focus,
+.controls input[type="email"]:hover,
+.controls input[type="number"]:focus,
+.controls input[type="number"]:hover,
+.controls input[type="date"]:focus,
+.controls input[type="date"]:hover,
+.controls input[type="tel"]:focus,
+.controls input[type="tel"]:hover,
+.controls textarea:focus,
+.controls textarea:hover,
+.controls button:focus,
+.controls button:hover,
+.controls select:focus,
+.controls select:hover {
+  outline: none;
+  border-color: #9FB1C1;
+}
+.controls input[type="text"]:focus + label, .controls input[type="text"]:hover + label,
+.controls input[type="email"]:focus + label,
+.controls input[type="email"]:hover + label,
+.controls input[type="number"]:focus + label,
+.controls input[type="number"]:hover + label,
+.controls input[type="date"]:focus + label,
+.controls input[type="date"]:hover + label,
+.controls input[type="tel"]:focus + label,
+.controls input[type="tel"]:hover + label,
+.controls textarea:focus + label,
+.controls textarea:hover + label,
+.controls button:focus + label,
+.controls button:hover + label,
+.controls select:focus + label,
+.controls select:hover + label {
+  color: #bdcc00;
+  cursor: text;
+}
+.controls .fa-sort {
+  position: absolute;
+  right: 10px;
+  top: 17px;
+  color: #999;
+}
+.controls select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+.controls label {
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  width: 60%;
+  color: #999;
+  font-size: 16px;
+  display: inline-block;
+  padding: 0 10px;
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0);
+  -moz-transition: color 0.3s, top 0.3s, background-color 0.8s;
+  -o-transition: color 0.3s, top 0.3s, background-color 0.8s;
+  -webkit-transition: color 0.3s, top 0.3s, background-color 0.8s;
+  transition: color 0.3s, top 0.3s, background-color 0.8s;
+  background-color: white;
+}
+.controls label.active {
+  top: -14px;
+  color: #555;
+  background-color: white;
+  width: auto;
+}
+.controls textarea {
+  resize: none;
+  height: 200px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #1b3d4d;
+  border: none;
+  color: #fff;
+  padding: 12px 0;
+  float: right;
+}
+button:hover {
+  background-color: #224c60;
+}
+
+.clear:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.grid {
+  background: white;
+}
+.grid:after {
+  /* Or @extend clearfix */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*='col-'] {
+  float: left;
+  padding-right: 10px;
+}
+.grid [class*='col-']:last-of-type {
+  padding-right: 0;
+}
+
+.col-2-3 {
+  width: 66.66%;
+}
+
+.col-1-3 {
+  width: 33.33%;
+}
+
+.col-1-2 {
+  width: 50%;
+}
+
+.col-1-4 {
+  width: 25%;
+}
+
+@media (max-width: 760px) {
+  .col-1-4-sm, .col-1-3, .col-2-3 {
     width: 100%;
-    margin: 10px auto 30px auto;
-    text-align: left;
-}
+  }
 
-.ac-container label:hover {
-    background: #fff;
+  [class*='col-'] {
+    padding-right: 0px;
+  }
 }
-
-.ac-container input:checked + label,.ac-container input:checked + label:hover {
-    background: #f1f2f3;
-    color: #666;
-    text-shadow: 0 1px 1px rgba(255,255,255,0.6);
-    box-shadow: 0 0 0 1px rgba(155,155,155,0.3),0 2px 2px rgba(0,0,0,0.1);
-    height: 30px;
-    line-height: 21px;
-    font-size: 13px;
-}
-
-.ac-container label:hover:after,.ac-container input:checked + label:hover:after {
-    content: '';
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    right: 13px;
-    top: 7px;
-    background: transparent url(../images/arrow_down.png) no-repeat center center;
-}
-
-.ac-container input:checked + label:hover:after {
-    background-image: url(../images/arrow_up.png);
-}
-
-.ac-container input {
-    display: none;
-}
-
-.ac-container article {
-    background: rgba(255,255,255,0.5);
-    margin-top: -1px;
-    overflow: hidden;
-    height: 0;
-    position: relative;
-    z-index: 10;
-    -webkit-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
-    -moz-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
-    -o-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
-    -ms-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
-    transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
-}
-
-.ac-container article p {
-    font-style: normal;
-    color: #777;
-    line-height: 23px;
-    font-size: 10px;
-    padding: 20px;
-    text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
-    font: normal normal 12px 'Open Sans';
-}
-
-.ac-container input:checked ~ article {
-    -webkit-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
-    -moz-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
-    -o-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
-    -ms-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
-    transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
-    box-shadow: 0 0 0 1px rgba(155,155,155,0.3);
-}
-
-.ac-container input:checked ~ article.ac-small {
-    height: 140px;
-}
-
-.ac-container input:checked ~ article.ac-medium {
-    height: 180px;
-}
-
-.ac-container input:checked ~ article.ac-large {
-    height: 230px;
+.col-1-8 {
+  width: 12.5%;
 }

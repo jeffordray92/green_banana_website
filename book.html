@@ -73,40 +73,125 @@
             <div class="content">
         
                 <div class="pure-g">
-                    <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-2-5 img-wrap">
-                       <section class="ac-container">
-                            <div>
-                                <input id="ac-1" name="accordion-1" type="radio" checked="">
-                                <label for="ac-1">About us</label>
-                                <article class="ac-small">
-                                    <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.</p>
-                                </article>
-                            </div>
-                            <div>
-                                <input id="ac-2" name="accordion-1" type="radio">
-                                <label for="ac-2">How we work</label>
-                                <article class="ac-medium">
-                                    <p>Like you, I used to think the world was this great place where everybody lived by the same standards I did, then some kid with a nail showed me I was living in his world, a world where chaos rules not order, a world where righteousness is not rewarded. That's Cesar's world, and if you're not willing to play by his rules, then you're gonna have to pay the price. </p>
-                                </article>
-                            </div>
-                            <div>
-                                <input id="ac-3" name="accordion-1" type="radio">
-                                <label for="ac-3">References</label>
-                                <article class="ac-large">
-                                    <p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man. </p>
-                                </article>
-                            </div>
-                            <div>
-                                <input id="ac-4" name="accordion-1" type="radio">
-                                <label for="ac-4">Contact us</label>
-                                <article class="ac-large">
-                                    <p>You see? It's curious. Ted did figure it out - time travel. And when we get back, we gonna tell everyone. How it's possible, how it's done, what the dangers are. But then why fifty years in the future when the spacecraft encounters a black hole does the computer call it an 'unknown entry event'? Why don't they know? If they don't know, that means we never told anyone. And if we never told anyone it means we never made it back. Hence we die down here. Just as a matter of deductive logic. </p>
-                                </article>
-                            </div>
-                        </section>
+                    <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 img-wrap">
+                            <form action="">
+                              <!--  General -->
+                              <div class="form-group">
+                                <h2 class="heading">Booking & contact</h2>
+                                <div class="controls">
+                                  <input type="text" id="name" class="floatLabel" name="name">
+                                  <label for="name">Name</label>
+                                </div>
+                                <div class="controls">
+                                  <input type="text" id="email" class="floatLabel" name="email">
+                                  <label for="email">Email</label>
+                                </div>       
+                                <div class="controls">
+                                  <input type="tel" id="phone" class="floatLabel" name="phone">
+                                  <label for="phone">Phone</label>
+                                </div>
+                                  <div class="grid">
+                                    <div class="col-2-3">
+                                      <div class="controls">
+                                       <input type="text" id="street" class="floatLabel" name="street">
+                                       <label for="street">Street</label>
+                                      </div>          
+                                    </div>
+                                    <div class="col-1-3">
+                                      <div class="controls">
+                                        <input type="number" id="street-number" class="floatLabel" name="street-number">
+                                        <label for="street-number">Number</label>
+                                      </div>          
+                                    </div>
+                                  </div>
+                                  <div class="grid">
+                                    <div class="col-2-3">
+                                      <div class="controls">
+                                        <input type="text" id="city" class="floatLabel" name="city">
+                                        <label for="city">City</label>
+                                      </div>         
+                                    </div>
+                                    <div class="col-1-3">
+                                      <div class="controls">
+                                        <input type="text" id="post-code" class="floatLabel" name="post-code">
+                                        <label for="post-code">Post Code</label>
+                                      </div>         
+                                    </div>
+                                  </div>
+                                  <div class="controls">
+                                    <input type="text" id="country" class="floatLabel" name="country">
+                                    <label for="country">Country</label>
+                                  </div>
+                              </div>
+                              <!--  Details -->
+                              <div class="form-group">
+                                <h2 class="heading">Details</h2>
+                                <div class="grid">
+                                <div class="col-1-2 col-1-2-sm">
+                                  <div class="controls">
+                                    <input type="date" id="arrive" class="floatLabel" name="arrive" value="<?php echo date('Y-m-d'); ?>">
+                                    <label for="arrive" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Arrive</label>
+                                  </div>      
+                                </div>
+                                <div class="col-1-42 col-1-2-sm">
+                                  <div class="controls">
+                                    <input type="date" id="depart" class="floatLabel" name="depart" value="<?php echo date('Y-m-d'); ?>" />
+                                    <label for="depart" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Depart</label>
+                                  </div>      
+                                </div>
+                                  </div>
+                                  <div class="grid">
+                                <div class="col-1-3 col-1-3-sm">
+                                  <div class="controls">
+                                    <i class="fa fa-sort"></i>
+                                    <select class="floatLabel">
+                                      <option value="blank"></option>
+                                      <option value="1">1</option>
+                                      <option value="2" selected>2</option>
+                                      <option value="3">3</option>
+                                    </select>
+                                    <label for="fruit"><i class="fa fa-male"></i>&nbsp;&nbsp;People</label>
+                                  </div>      
+                                </div>
+                                <div class="col-1-3 col-1-3-sm">
+                                <div class="controls">
+                                  <i class="fa fa-sort"></i>
+                                  <select class="floatLabel">
+                                    <option value="blank"></option>
+                                    <option value="deluxe" selected>With Bathroom</option>
+                                    <option value="Zuri-zimmer">Without Bathroom</option>
+                                  </select>
+                                  <label for="fruit">Room</label>
+                                 </div>     
+                                </div>
+
+                                <div class="col-1-3 col-1-3-sm">
+                                <div class="controls">
+                                  <i class="fa fa-sort"></i>
+                                  <select class="floatLabel">
+                                    <option value="blank"></option>
+                                    <option value="single-bed">Zweibett</option>
+                                    <option value="double-bed" selected>Doppelbett</option>
+                                  </select>
+                                  <label for="fruit">Bedding</label>
+                                 </div>     
+                                </div>
+                                  
+                                 </div>
+                                  <div class="grid">
+                                    <p class="info-text">Please describe your needs e.g. Extra beds, children's cots</p>
+                                    <br>
+                                    <div class="controls">
+                                      <textarea name="comments" class="floatLabel" id="comments"></textarea>
+                                      <label for="comments">Comments</label>
+                                      </div>
+                                        <button type="submit" value="Submit" class="col-1-4">Submit</button>
+                                  </div>  
+                              </div> <!-- /.form-group -->
+                            </form>
                     </div>
 
-                    <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+                    <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
 
                         <h4>Green Banana is a renowned design hotel on the sea, a jewel rising in the Asian nature of the grounds; enjoying a privileged position to easily reach many of the most evocative corners of the region. </h4>
 
