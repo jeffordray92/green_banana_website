@@ -130,6 +130,10 @@ function menuIcon() {
                 ease: SlowMo.easeOut
             }, 1);
 
+            TweenMax.to($('html'), 0.5, {
+                "overflow-y": "scroll",
+                ease: SlowMo.easeOut
+            }, 1);
 
             $('.fog ').foggy({
                blurRadius: 0,          // In pixels.
@@ -142,6 +146,11 @@ function menuIcon() {
             TweenMax.to($('.hidden-menu'), 0.5, {
                 display: "block",
                 autoAlpha: 1,
+                ease: SlowMo.easeOut
+            }, 1);
+
+            TweenMax.to($('html'), 0.5, {
+                overflow: "hidden",
                 ease: SlowMo.easeOut
             }, 1);
 

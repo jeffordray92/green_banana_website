@@ -1,9 +1,26 @@
 .splash{
-    height: 300px;
+    height: auto;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    top: 0;
+    width: 30%;
 }
 .splash-container{
-	background:  url(../img/bg/pattern.png) repeat, url(../img/bg/open.jpg)  no-repeat;
-	background-size:  3px 3px, cover;
+	background:  repeat, url(../img/bg/open.jpg)  no-repeat;
+	background-size:  cover;
+    display: table;
+
+    &:before{
+        background: #000;
+        content: "";
+        height: 100%;
+        width: 100%;
+        -webkit-mix-blend-mode: soft-light;
+        -moz-mix-blend-mode: soft-light;
+        -o-mix-blend-mode: soft-light;
+        mix-blend-mode: soft-light;
+    }
 }
 
 .splash-small{
@@ -11,13 +28,16 @@
     font-style: italic;
     font-size: 20px;
     text-transform: none;
-    color: #fff;
+    color: #fff;    
+    position: relative;
+    width: 100%;
+    display: block;
 
     &:before{
         position: absolute;
         content: " ";
         height: 2px;
-        width: 40%;
+        width: 35%;
         left: 0;
         background: #fff;
         top: 10px;
@@ -27,26 +47,18 @@
         position: absolute;
         content: " ";
         height: 2px;
-        width: 40%;
+        width: 35%;
         right: 0;
         background: #fff;
-        top: 12px;
+        top: 10px;
     }
-}
-.splash-logo{
-	width: 150px;
-    position: absolute;
-    top: 15px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
 }
 
 .splash-head{
     border: none;
     border-radius: 0;
     padding: 10px 0px 16px;
-    font-size: 400%;
+    font-size: 200%;
     margin: 0;
     border-bottom: 2px solid #fff;
     font-family: 'Lustria', serif;
@@ -80,4 +92,49 @@
     width: 150px;
     letter-spacing: 4px;
     padding-left: 4px;
+}
+
+
+
+@media (max-width: 1199px){
+
+    .splash{
+        width: 400px;
+    }
+}
+
+@media (max-width: 480px){
+
+    .splash{
+        width: 310px;
+    }
+
+    .splash-small{
+
+        &:before{
+            width: 28%;
+        }
+
+        &:after{
+            width: 28%;
+        }
+    }
+}
+
+@media (max-width: 320px){
+
+    .splash{
+        width: 210px;
+    }
+
+    .splash-small{
+
+        &:before{
+            width: 20%;
+        }
+
+        &:after{
+            width: 20%;
+        }
+    }
 }

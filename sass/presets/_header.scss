@@ -25,6 +25,7 @@
             font-weight: 600;
             text-align: center;
             line-height: 14px;
+            font-family: 'Open Sans', sans-serif;
 
             span{
                 letter-spacing: 2px;
@@ -32,12 +33,12 @@
                 padding-top: 17px;
                 display: block;
                 padding-left: 4px;
-                font-family: 'Lora', serif;
+                font-size: 75%;
             }
 
             small{
-                letter-spacing: 4px;
-                font-size: 65%;
+                letter-spacing: 3px;
+                font-size: 70%;
                 font-weight: 400;
             }
         }

@@ -44,7 +44,7 @@ h2{
 	        position: absolute;
 	        content: " ";
 	        height: 2px;
-	        width: 40%;
+	        width: 35%;
 	        left: 0;
 	        background: #fff;
 	        top: 10px;
@@ -54,15 +54,22 @@ h2{
 	        position: absolute;
 	        content: " ";
 	        height: 2px;
-	        width: 40%;
+	        width: 35%;
 	        right: 0;
 	        background: #fff;
-	        top: 12px;
+	        top: 10px;
 	    }
 
 	}
 }
 
+.no-margin-top{
+	margin-top: 0 !Important;
+}
+
+.no-margin-bottom{
+	margin-bottom: 0 !Important;
+}
 
 .dark{
 	color: #222;
@@ -90,7 +97,7 @@ h2{
 		  	background: none;
 		    color: #077f42;
 		    position: relative;
-		    padding: 20px 40px; 
+		    padding: 10px 40px; 
 		    border: 2px solid #077f42;
 		    letter-spacing: 2px;
 			&:after{
@@ -142,4 +149,68 @@ h2{
 		}
 
 	}
+}
+
+.content{
+	width: 1180px;
+		margin: 0 auto;
+}
+@media (max-width: 1199px){
+	.content{
+		width: 85%;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 998px){
+	h2{
+		&.lined{
+
+		    &:before{
+		        width: 25%;
+		    }
+
+		    &:after{
+		        width: 25%;
+		    }
+
+		}
+	}
+}
+@media (max-width: 640px){
+	h2{
+		&.lined{
+			width:  90%;
+
+		    &:before{
+		        width: 25%;
+		    }
+
+		    &:after{
+		        width: 25%;
+		    }
+
+		}
+	}
+
+}
+@media (max-width: 480px){
+	h2{
+		&.lined{
+
+		    &:before{
+		        width: 20%;
+		    }
+
+		    &:after{
+		        width: 20%;
+		    }
+
+		}
+	}
+
+}
+
+@media (max-width: 320px){
+
 }
