@@ -189,6 +189,17 @@ function scrollSmooth() {
 
 }    
 
+function isotoper(){
+
+    var $container = $('.acc-list').isotope({
+        itemSelector: '.masonry-item',
+        layoutMode: 'masonry',
+        masonry: {
+          gutter: '.gutter-sizer',
+          columnWidth: '.grid-sizer'
+        }
+    });
+}
 
 $(document).ready(function() {
     misc();
@@ -196,6 +207,7 @@ $(document).ready(function() {
     menuIcon();
     bookForm();
     tabs();
+    isotoper();
 });
 
 $(window).load(function() {

@@ -2,6 +2,11 @@ body {
     background: #222;
 }
 
+.pure-g{
+    h1,h2,h3,h4,h5,h6,a,p,span,small, .acc-content{
+        letter-spacing: normal;
+    }
+}
 .pages {
     .content-wrapper{
         position: relative;
@@ -43,6 +48,7 @@ body {
         width: 100%;
     }
 }
+
 
 .pure-g{
     &.full-width{
@@ -110,13 +116,28 @@ body {
     .ribbon-content{
     	z-index: 10;
     }
+
+    &.flat{
+        
+        &:after{
+            content: " ";
+            background: #026c36;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 5;
+            opacity: 0.1;
+        }
+    }
 }
 
 .card-desc{
     position: relative;
     text-align: center;
     h3{
-    	color: #077f42;
+    	color: #005e20;
     	font-size: 150%;
     	font-family: 'Lustria', serif;
         text-align: center;

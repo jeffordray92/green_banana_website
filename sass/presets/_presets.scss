@@ -1,12 +1,12 @@
 h1,h2,h3,h4,h5,h6{
 	font-family: 'Lora', serif;
-	color: #222;
+	color: #013813;
 }
 
 div, p, table, a{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
-	color: #222;
+	color: #212121;
 }
 
 h2{
@@ -93,6 +93,9 @@ h2{
 			border-radius: 0;
 		}
 
+		&.full-width{
+			width: 100%;
+		}
 		&.green{   
 		  	background: none;
 		    color: #077f42;
@@ -155,6 +158,94 @@ h2{
 	width: 1180px;
 		margin: 0 auto;
 }
+
+.is-checked{background: #3d3d3d; color: white;}
+
+/* ---- isotope ---- */
+
+.masonry {
+  clear:both;
+  padding:2vw 0 0 2vw;
+
+  .masonry *{
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+
+  }
+}
+
+/* clear fix */
+.masonry:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .element-item ---- */
+
+.masonry-item,
+.grid-sizer {
+  width: 28%;
+}
+ 
+.masonry-item {
+  float: left;
+  height: auto;
+  margin-bottom: 30px;
+  img{
+    width: 100%;
+  }
+}
+
+
+.gutter-sizer { width: 8%; }
+
+.masonry-item{
+	  img{ 
+	    width: 100%; 
+	  }
+
+    .title{
+      color: #005e20;
+      font-size: 150%;
+      font-family: 'Lustria', serif; 
+      text-align: center;
+      margin: 20px auto;
+      position: relative;
+    }
+
+    .acc-content{
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+      color: #212121;
+      text-align: center;
+    } 
+
+} 
+
+.center-grid{
+	margin: 0 auto;
+}
+.controls.check{
+	margin: 0px 0 20px;
+
+	span{
+		display: inline-block;
+    	vertical-align: middle;
+	}
+}
+.controls input[type="checkbox"]{
+    background: #fff;
+    border: 1px solid #222;
+    padding: 2px;
+    height: 22px;
+    width: 22px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
 @media (max-width: 1199px){
 	.content{
 		width: 85%;
