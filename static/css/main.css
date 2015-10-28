@@ -1344,6 +1344,43 @@ body {
   height: 100% !important;
 }
 
+/* line 2, ../../sass/presets/_profile.scss */
+.profile-pic .img-wrap {
+  border-radius: 500px;
+  top: -65px;
+  z-index: 999999;
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: block;
+  left: 0;
+  right: 0;
+}
+/* line 14, ../../sass/presets/_profile.scss */
+.profile-pic .img-wrap img {
+  width: 100%;
+}
+
+/* line 20, ../../sass/presets/_profile.scss */
+.profile-wrap {
+  text-align: center;
+  padding-bottom: 30px;
+}
+/* line 24, ../../sass/presets/_profile.scss */
+.profile-wrap h4 {
+  margin-top: 115px;
+}
+/* line 29, ../../sass/presets/_profile.scss */
+.profile-wrap small a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
 /* line 2, ../../sass/presets/_tabs.scss */
 .bg-color {
   transition-duration: .5s;
