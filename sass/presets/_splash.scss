@@ -5,13 +5,15 @@
     position: relative;
     top: 0;
     width: 30%;
+    z-index: 110;
 }
+
 .splash-container{
 	background:  repeat, url(../img/bg/open.jpg)  no-repeat;
 	background-size:  cover;
     display: table;
 
-    &:before{
+    &:after{
         background: #000;
         content: "";
         height: 100%;
@@ -20,6 +22,25 @@
         -moz-mix-blend-mode: soft-light;
         -o-mix-blend-mode: soft-light;
         mix-blend-mode: soft-light;
+        z-index: 99;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.splash-logo{
+    width: 150px;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 110;
+
+
+    @media (max-height: 480px) and (orientation: landscape){
+        display: none;
     }
 }
 
@@ -92,6 +113,7 @@
     width: 150px;
     letter-spacing: 4px;
     padding-left: 4px;
+    z-index: 110;
 }
 
 

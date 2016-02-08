@@ -126,6 +126,14 @@ h2{
 			&:focus{
 				box-shadow: none;
 			}
+
+			@media (max-width: 993px){
+				padding: 10px 20px;
+			}
+
+			@media (max-width: 520px){
+				padding: 10px 40px;
+			}
 		}
 
 		&.solid-green{
@@ -187,6 +195,15 @@ h2{
 .masonry-item,
 .grid-sizer {
   width: 28%;
+
+  @media (max-width: 768px){
+  	width: 46%;
+  }
+
+
+  @media (max-width: 520px){
+  	width: 92%;
+  }
 }
  
 .masonry-item {

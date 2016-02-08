@@ -43,10 +43,58 @@
             </ul>
         </div>
     </div>
+    <div class="booking">
+        <form>
+            <div class="controls fourth">
+                <input type="date" id="arrive" class="floatLabel" name="arrive" value="<?php echo date('Y-m-d'); ?>">
+                <label for="arrive" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Check In</label>
+            </div>  
+
+            <div class="controls fourth">
+                <input type="date" id="arrive" class="floatLabel" name="arrive" value="<?php echo date('Y-m-d'); ?>">
+                <label for="arrive" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Check Out</label>
+            </div>
+
+            <div class="controls ninth">
+                <i class="fa fa-sort"></i>
+                <select class="floatLabel">
+                    <option value="blank"></option>
+                    <option value="1">1</option>
+                    <option value="2" selected>2</option>
+                    <option value="3">3</option>
+                </select>
+                <label for="fruit">Adult</label>
+            </div> 
+
+            <div class="controls ninth">
+                <i class="fa fa-sort"></i>
+                <select class="floatLabel">
+                    <option value="blank"></option>
+                    <option value="1">1</option>
+                    <option value="2" selected>2</option>
+                    <option value="3">3</option>
+                </select>
+                <label for="fruit">Child</label>
+            </div> 
+
+            <div class="controls ninth last">
+                <i class="fa fa-sort"></i>
+                <select class="floatLabel">
+                    <option value="blank"></option>
+                    <option value="1">1</option>
+                    <option value="2" selected>2</option>
+                    <option value="3">3</option>
+                </select>
+                <label for="fruit">Rooms</label>
+            </div> 
+            <button class = "pure-button flat green">Book Now</button>
+            
+        </form> 
+    </div>
     <div class="header">        
         <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
             <a class="pure-menu-heading logo" href=""></a>
-            <a href="#" class="pure-menu-heading book">
+            <a href="javascript:void(0)" class="pure-menu-heading book">
                 <span><small>Book</small><br/>Now</span>
             </a>
         </div>

@@ -30,7 +30,9 @@ h2.heading {
   select{
     height: 45px;
   }
-
+  select{
+    line-height: 12px;
+  }
   input[type="text"],
   input[type="email"],
   input[type="number"],

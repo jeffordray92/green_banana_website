@@ -121,7 +121,9 @@ function tabs(){
 function menuIcon() {
     $("#menu-open").click(function(){
 
-        
+        $('.book').removeClass('active');
+        $('.booking').removeClass('show');
+
         if($(this).hasClass("active")){
             $(this).removeClass("active");
             TweenMax.to($('.hidden-menu'), 0.5, {
@@ -190,15 +192,53 @@ function scrollSmooth() {
 }    
 
 function isotoper(){
+    if($('.acc-list').length){
+        var $container = $('.acc-list').isotope({
+            itemSelector: '.masonry-item',
+            layoutMode: 'masonry',
+            masonry: {
+              gutter: '.gutter-sizer',
+              columnWidth: '.grid-sizer'
+            }
+        });
 
-    var $container = $('.acc-list').isotope({
-        itemSelector: '.masonry-item',
-        layoutMode: 'masonry',
-        masonry: {
-          gutter: '.gutter-sizer',
-          columnWidth: '.grid-sizer'
+    }
+}
+
+function bookNow(){
+     $('.book').click(function() {
+        if($(this).hasClass('active')){
+            $(this).removeClass('active');
+            $('.booking').removeClass('show');
+        
         }
-    });
+        else{
+            $(this).addClass('active');
+            $('.booking').addClass('show');
+        }
+
+
+        if($('#menu-open').hasClass("active")){
+            $(this).removeClass("active");
+            TweenMax.to($('.hidden-menu'), 0.5, {
+                display: "none",
+                autoAlpha: 0,
+                ease: SlowMo.easeOut
+            }, 1);
+
+            TweenMax.to($('html'), 0.5, {
+                "overflow-y": "scroll",
+                ease: SlowMo.easeOut
+            }, 1);
+
+            $('.fog ').foggy({
+               blurRadius: 0,          // In pixels.
+               opacity: 1,           // Falls back to a filter for IE.
+               cssFilterSupport: true  // Use "-webkit-filter" where available.
+             });
+        }
+
+     });
 }
 
 $(document).ready(function() {
@@ -207,6 +247,7 @@ $(document).ready(function() {
     menuIcon();
     bookForm();
     tabs();
+    bookNow();
     isotoper();
 });
 

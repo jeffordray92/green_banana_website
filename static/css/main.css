@@ -129,7 +129,19 @@ h2.lined:after {
 .pure-button.flat.green:focus {
   box-shadow: none;
 }
-/* line 131, ../../sass/presets/_presets.scss */
+@media (max-width: 993px) {
+  /* line 99, ../../sass/presets/_presets.scss */
+  .pure-button.flat.green {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 520px) {
+  /* line 99, ../../sass/presets/_presets.scss */
+  .pure-button.flat.green {
+    padding: 10px 40px;
+  }
+}
+/* line 139, ../../sass/presets/_presets.scss */
 .pure-button.flat.solid-green {
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -138,40 +150,40 @@ h2.lined:after {
   border: 2px solid #077f42;
   color: #fff;
 }
-/* line 139, ../../sass/presets/_presets.scss */
+/* line 147, ../../sass/presets/_presets.scss */
 .pure-button.flat.solid-green:hover, .pure-button.flat.solid-green:focus {
   background: #fff;
   border: 2px solid #077f42;
   color: #077f42;
 }
-/* line 144, ../../sass/presets/_presets.scss */
+/* line 152, ../../sass/presets/_presets.scss */
 .pure-button.flat.solid-green:hover:after, .pure-button.flat.solid-green:focus:after {
   width: 100%;
 }
-/* line 149, ../../sass/presets/_presets.scss */
+/* line 157, ../../sass/presets/_presets.scss */
 .pure-button.flat.solid-green:focus {
   box-shadow: none;
 }
 
-/* line 157, ../../sass/presets/_presets.scss */
+/* line 165, ../../sass/presets/_presets.scss */
 .content {
   width: 1180px;
   margin: 0 auto;
 }
 
-/* line 162, ../../sass/presets/_presets.scss */
+/* line 170, ../../sass/presets/_presets.scss */
 .is-checked {
   background: #3d3d3d;
   color: white;
 }
 
 /* ---- isotope ---- */
-/* line 166, ../../sass/presets/_presets.scss */
+/* line 174, ../../sass/presets/_presets.scss */
 .masonry {
   clear: both;
   padding: 2vw 0 0 2vw;
 }
-/* line 170, ../../sass/presets/_presets.scss */
+/* line 178, ../../sass/presets/_presets.scss */
 .masonry .masonry * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -179,7 +191,7 @@ h2.lined:after {
 }
 
 /* clear fix */
-/* line 179, ../../sass/presets/_presets.scss */
+/* line 187, ../../sass/presets/_presets.scss */
 .masonry:after {
   content: '';
   display: block;
@@ -187,33 +199,47 @@ h2.lined:after {
 }
 
 /* ---- .element-item ---- */
-/* line 187, ../../sass/presets/_presets.scss */
+/* line 195, ../../sass/presets/_presets.scss */
 .masonry-item,
 .grid-sizer {
   width: 28%;
 }
+@media (max-width: 768px) {
+  /* line 195, ../../sass/presets/_presets.scss */
+  .masonry-item,
+  .grid-sizer {
+    width: 46%;
+  }
+}
+@media (max-width: 520px) {
+  /* line 195, ../../sass/presets/_presets.scss */
+  .masonry-item,
+  .grid-sizer {
+    width: 92%;
+  }
+}
 
-/* line 192, ../../sass/presets/_presets.scss */
+/* line 209, ../../sass/presets/_presets.scss */
 .masonry-item {
   float: left;
   height: auto;
   margin-bottom: 30px;
 }
-/* line 196, ../../sass/presets/_presets.scss */
+/* line 213, ../../sass/presets/_presets.scss */
 .masonry-item img {
   width: 100%;
 }
 
-/* line 202, ../../sass/presets/_presets.scss */
+/* line 219, ../../sass/presets/_presets.scss */
 .gutter-sizer {
   width: 8%;
 }
 
-/* line 205, ../../sass/presets/_presets.scss */
+/* line 222, ../../sass/presets/_presets.scss */
 .masonry-item img {
   width: 100%;
 }
-/* line 209, ../../sass/presets/_presets.scss */
+/* line 226, ../../sass/presets/_presets.scss */
 .masonry-item .title {
   color: #005e20;
   font-size: 150%;
@@ -222,7 +248,7 @@ h2.lined:after {
   margin: 20px auto;
   position: relative;
 }
-/* line 218, ../../sass/presets/_presets.scss */
+/* line 235, ../../sass/presets/_presets.scss */
 .masonry-item .acc-content {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -230,22 +256,22 @@ h2.lined:after {
   text-align: center;
 }
 
-/* line 227, ../../sass/presets/_presets.scss */
+/* line 244, ../../sass/presets/_presets.scss */
 .center-grid {
   margin: 0 auto;
 }
 
-/* line 230, ../../sass/presets/_presets.scss */
+/* line 247, ../../sass/presets/_presets.scss */
 .controls.check {
   margin: 0px 0 20px;
 }
-/* line 233, ../../sass/presets/_presets.scss */
+/* line 250, ../../sass/presets/_presets.scss */
 .controls.check span {
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 238, ../../sass/presets/_presets.scss */
+/* line 255, ../../sass/presets/_presets.scss */
 .controls input[type="checkbox"] {
   background: #fff;
   border: 1px solid #222;
@@ -258,42 +284,42 @@ h2.lined:after {
 }
 
 @media (max-width: 1199px) {
-  /* line 250, ../../sass/presets/_presets.scss */
+  /* line 267, ../../sass/presets/_presets.scss */
   .content {
     width: 85%;
     margin: 0 auto;
   }
 }
 @media (max-width: 998px) {
-  /* line 260, ../../sass/presets/_presets.scss */
+  /* line 277, ../../sass/presets/_presets.scss */
   h2.lined:before {
     width: 25%;
   }
-  /* line 264, ../../sass/presets/_presets.scss */
+  /* line 281, ../../sass/presets/_presets.scss */
   h2.lined:after {
     width: 25%;
   }
 }
 @media (max-width: 640px) {
-  /* line 273, ../../sass/presets/_presets.scss */
+  /* line 290, ../../sass/presets/_presets.scss */
   h2.lined {
     width: 90%;
   }
-  /* line 276, ../../sass/presets/_presets.scss */
+  /* line 293, ../../sass/presets/_presets.scss */
   h2.lined:before {
     width: 25%;
   }
-  /* line 280, ../../sass/presets/_presets.scss */
+  /* line 297, ../../sass/presets/_presets.scss */
   h2.lined:after {
     width: 25%;
   }
 }
 @media (max-width: 480px) {
-  /* line 292, ../../sass/presets/_presets.scss */
+  /* line 309, ../../sass/presets/_presets.scss */
   h2.lined:before {
     width: 20%;
   }
-  /* line 296, ../../sass/presets/_presets.scss */
+  /* line 313, ../../sass/presets/_presets.scss */
   h2.lined:after {
     width: 20%;
   }
@@ -336,7 +362,11 @@ h2.heading {
 .controls select {
   height: 45px;
 }
-/* line 34, ../../sass/presets/_accordion.scss */
+/* line 33, ../../sass/presets/_accordion.scss */
+.controls select {
+  line-height: 12px;
+}
+/* line 36, ../../sass/presets/_accordion.scss */
 .controls input[type="text"],
 .controls input[type="email"],
 .controls input[type="number"],
@@ -363,7 +393,7 @@ h2.heading {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 61, ../../sass/presets/_accordion.scss */
+/* line 63, ../../sass/presets/_accordion.scss */
 .controls input[type="text"]:focus, .controls .controls input[type="text"]:hover,
 .controls input[type="email"]:focus,
 .controls input[type="email"]:hover,
@@ -384,7 +414,7 @@ h2.heading {
   outline: none;
   border-color: #9FB1C1;
 }
-/* line 82, ../../sass/presets/_accordion.scss */
+/* line 84, ../../sass/presets/_accordion.scss */
 .controls input[type="text"]:focus + label,
 .controls input[type="text"]:hover + label,
 .controls input[type="email"]:focus + label,
@@ -406,20 +436,20 @@ h2.heading {
   color: #077f42;
   cursor: text;
 }
-/* line 104, ../../sass/presets/_accordion.scss */
+/* line 106, ../../sass/presets/_accordion.scss */
 .controls .fa-sort {
   position: absolute;
   right: 10px;
   top: 15px;
   color: #999;
 }
-/* line 111, ../../sass/presets/_accordion.scss */
+/* line 113, ../../sass/presets/_accordion.scss */
 .controls select {
   -moz-appearance: none;
   -webkit-appearance: none;
   cursor: pointer;
 }
-/* line 117, ../../sass/presets/_accordion.scss */
+/* line 119, ../../sass/presets/_accordion.scss */
 .controls label {
   position: absolute;
   left: 8px;
@@ -437,20 +467,20 @@ h2.heading {
   transition: color 0.3s, top 0.3s, background-color 0.8s;
   background-color: white;
 }
-/* line 134, ../../sass/presets/_accordion.scss */
+/* line 136, ../../sass/presets/_accordion.scss */
 .controls label.active {
   top: -14px;
   color: #555;
   background-color: white;
   width: auto;
 }
-/* line 142, ../../sass/presets/_accordion.scss */
+/* line 144, ../../sass/presets/_accordion.scss */
 .controls textarea {
   resize: none;
   height: 192px;
 }
 
-/* line 148, ../../sass/presets/_accordion.scss */
+/* line 150, ../../sass/presets/_accordion.scss */
 button {
   cursor: pointer;
   background-color: #1b3d4d;
@@ -459,78 +489,78 @@ button {
   padding: 12px 0;
   float: right;
 }
-/* line 156, ../../sass/presets/_accordion.scss */
+/* line 158, ../../sass/presets/_accordion.scss */
 button:hover {
   background-color: #224c60;
 }
 
-/* line 161, ../../sass/presets/_accordion.scss */
+/* line 163, ../../sass/presets/_accordion.scss */
 .clear:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 167, ../../sass/presets/_accordion.scss */
+/* line 169, ../../sass/presets/_accordion.scss */
 .grid {
   background: white;
 }
-/* line 170, ../../sass/presets/_accordion.scss */
+/* line 172, ../../sass/presets/_accordion.scss */
 .grid:after {
   /* Or @extend clearfix */
   content: "";
   display: table;
   clear: both;
 }
-/* line 177, ../../sass/presets/_accordion.scss */
+/* line 179, ../../sass/presets/_accordion.scss */
 .grid .info-text {
   margin: 0 0 15px;
 }
 
-/* line 182, ../../sass/presets/_accordion.scss */
+/* line 184, ../../sass/presets/_accordion.scss */
 [class*='col-'] {
   float: left;
   padding-right: 10px;
 }
 
-/* line 187, ../../sass/presets/_accordion.scss */
+/* line 189, ../../sass/presets/_accordion.scss */
 .col-2-3 {
   width: 66.66%;
 }
 
-/* line 191, ../../sass/presets/_accordion.scss */
+/* line 193, ../../sass/presets/_accordion.scss */
 .col-1-3 {
   width: 33.33%;
 }
 
-/* line 195, ../../sass/presets/_accordion.scss */
+/* line 197, ../../sass/presets/_accordion.scss */
 .col-1-2 {
   width: 50%;
 }
 
-/* line 199, ../../sass/presets/_accordion.scss */
+/* line 201, ../../sass/presets/_accordion.scss */
 .col-1-4 {
   width: 25%;
 }
 
-/* line 203, ../../sass/presets/_accordion.scss */
+/* line 205, ../../sass/presets/_accordion.scss */
 .right-last {
   padding-right: 0;
   float: right;
 }
 
 @media (max-width: 760px) {
-  /* line 209, ../../sass/presets/_accordion.scss */
+  /* line 211, ../../sass/presets/_accordion.scss */
   .col-1-4-sm, .col-1-3, .col-2-3, .col-1-2 {
     width: 100%;
   }
 
-  /* line 213, ../../sass/presets/_accordion.scss */
+  /* line 215, ../../sass/presets/_accordion.scss */
   [class*='col-'] {
     padding-right: 0px;
   }
 }
-/* line 218, ../../sass/presets/_accordion.scss */
+/* line 220, ../../sass/presets/_accordion.scss */
 .col-1-8 {
   width: 12.5%;
 }
@@ -699,6 +729,113 @@ button:hover {
   transform: translate(0px, -10px) rotate(-45deg);
 }
 
+/* line 107, ../../sass/presets/_header.scss */
+.booking {
+  position: fixed;
+  width: 100%;
+  padding: 12px 110px 12px 180px;
+  background: #fff;
+  z-index: 9;
+  transform: translate(0, -72px);
+  transition: all 0.5s ease;
+}
+/* line 117, ../../sass/presets/_header.scss */
+.booking .controls input, .booking .controls select {
+  margin-bottom: 0;
+}
+/* line 121, ../../sass/presets/_header.scss */
+.booking .controls.fourth, .booking .controls.ninth {
+  display: inline-block;
+}
+/* line 126, ../../sass/presets/_header.scss */
+.booking .controls.fourth {
+  width: 24%;
+  margin-right: 1%;
+}
+/* line 131, ../../sass/presets/_header.scss */
+.booking .controls.ninth {
+  width: 11%;
+  margin-right: 1%;
+}
+@media (max-width: 1400px) {
+  /* line 138, ../../sass/presets/_header.scss */
+  .booking .controls.fourth {
+    width: 49%;
+    margin-bottom: 15px;
+  }
+  /* line 141, ../../sass/presets/_header.scss */
+  .booking .controls.fourth:nth-child(2) {
+    margin-right: 0;
+  }
+  /* line 146, ../../sass/presets/_header.scss */
+  .booking .controls.ninth {
+    width: 23.65%;
+    margin-right: 1%;
+  }
+}
+@media (max-width: 768px) {
+  /* line 155, ../../sass/presets/_header.scss */
+  .booking .controls.fourth {
+    width: 100%;
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+  /* line 159, ../../sass/presets/_header.scss */
+  .booking .controls.fourth:nth-child(2) {
+    margin-right: 0;
+  }
+  /* line 164, ../../sass/presets/_header.scss */
+  .booking .controls.ninth {
+    width: 100%;
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+}
+/* line 174, ../../sass/presets/_header.scss */
+.booking .pure-button {
+  width: 12%;
+  padding: 12px 0 !important;
+}
+@media (max-width: 1400px) {
+  /* line 174, ../../sass/presets/_header.scss */
+  .booking .pure-button {
+    width: 23.65%;
+    margin-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  /* line 174, ../../sass/presets/_header.scss */
+  .booking .pure-button {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+/* line 188, ../../sass/presets/_header.scss */
+.booking.show {
+  transform: translate(0, 0);
+}
+@media (max-width: 1400px) {
+  /* line 107, ../../sass/presets/_header.scss */
+  .booking {
+    transform: translate(0, -130px);
+  }
+}
+@media (max-width: 768px) {
+  /* line 107, ../../sass/presets/_header.scss */
+  .booking {
+    padding-top: 30px;
+    transform: translate(0, -500px);
+  }
+}
+@media (max-width: 640px) {
+  /* line 107, ../../sass/presets/_header.scss */
+  .booking {
+    padding: 110px 50px 30px;
+    transform: translate(0, -500px);
+  }
+}
+
 @-moz-keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     -moz-transform: translateY(0);
@@ -774,16 +911,17 @@ button:hover {
   position: relative;
   top: 0;
   width: 30%;
+  z-index: 110;
 }
 
-/* line 9, ../../sass/presets/_splash.scss */
+/* line 11, ../../sass/presets/_splash.scss */
 .splash-container {
   background: repeat, url(../img/bg/open.jpg) no-repeat;
   background-size: cover;
   display: table;
 }
-/* line 14, ../../sass/presets/_splash.scss */
-.splash-container:before {
+/* line 16, ../../sass/presets/_splash.scss */
+.splash-container:after {
   background: #000;
   content: "";
   height: 100%;
@@ -792,9 +930,30 @@ button:hover {
   -moz-mix-blend-mode: soft-light;
   -o-mix-blend-mode: soft-light;
   mix-blend-mode: soft-light;
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-/* line 26, ../../sass/presets/_splash.scss */
+/* line 32, ../../sass/presets/_splash.scss */
+.splash-logo {
+  width: 150px;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 110;
+}
+@media (max-height: 480px) and (orientation: landscape) {
+  /* line 32, ../../sass/presets/_splash.scss */
+  .splash-logo {
+    display: none;
+  }
+}
+
+/* line 47, ../../sass/presets/_splash.scss */
 .splash-small {
   font-family: 'Lora', serif;
   font-style: italic;
@@ -805,7 +964,7 @@ button:hover {
   width: 100%;
   display: block;
 }
-/* line 36, ../../sass/presets/_splash.scss */
+/* line 57, ../../sass/presets/_splash.scss */
 .splash-small:before {
   position: absolute;
   content: " ";
@@ -815,7 +974,7 @@ button:hover {
   background: #fff;
   top: 10px;
 }
-/* line 46, ../../sass/presets/_splash.scss */
+/* line 67, ../../sass/presets/_splash.scss */
 .splash-small:after {
   position: absolute;
   content: " ";
@@ -826,7 +985,7 @@ button:hover {
   top: 10px;
 }
 
-/* line 57, ../../sass/presets/_splash.scss */
+/* line 78, ../../sass/presets/_splash.scss */
 .splash-head {
   border: none;
   border-radius: 0;
@@ -837,13 +996,13 @@ button:hover {
   font-family: 'Lustria', serif;
   letter-spacing: 0.3em;
 }
-/* line 67, ../../sass/presets/_splash.scss */
+/* line 88, ../../sass/presets/_splash.scss */
 .splash-head strong {
   font-weight: normal;
   font-size: 120%;
 }
 
-/* line 73, ../../sass/presets/_splash.scss */
+/* line 94, ../../sass/presets/_splash.scss */
 .splash-subhead {
   text-transform: none;
   font-family: 'Lustria', serif;
@@ -851,7 +1010,7 @@ button:hover {
   letter-spacing: 0.3em;
 }
 
-/* line 80, ../../sass/presets/_splash.scss */
+/* line 101, ../../sass/presets/_splash.scss */
 .discover {
   position: absolute;
   bottom: 20px;
@@ -867,40 +1026,41 @@ button:hover {
   width: 150px;
   letter-spacing: 4px;
   padding-left: 4px;
+  z-index: 110;
 }
 
 @media (max-width: 1199px) {
-  /* line 101, ../../sass/presets/_splash.scss */
+  /* line 123, ../../sass/presets/_splash.scss */
   .splash {
     width: 400px;
   }
 }
 @media (max-width: 480px) {
-  /* line 108, ../../sass/presets/_splash.scss */
+  /* line 130, ../../sass/presets/_splash.scss */
   .splash {
     width: 310px;
   }
 
-  /* line 114, ../../sass/presets/_splash.scss */
+  /* line 136, ../../sass/presets/_splash.scss */
   .splash-small:before {
     width: 28%;
   }
-  /* line 118, ../../sass/presets/_splash.scss */
+  /* line 140, ../../sass/presets/_splash.scss */
   .splash-small:after {
     width: 28%;
   }
 }
 @media (max-width: 320px) {
-  /* line 126, ../../sass/presets/_splash.scss */
+  /* line 148, ../../sass/presets/_splash.scss */
   .splash {
     width: 210px;
   }
 
-  /* line 132, ../../sass/presets/_splash.scss */
+  /* line 154, ../../sass/presets/_splash.scss */
   .splash-small:before {
     width: 20%;
   }
-  /* line 136, ../../sass/presets/_splash.scss */
+  /* line 158, ../../sass/presets/_splash.scss */
   .splash-small:after {
     width: 20%;
   }
