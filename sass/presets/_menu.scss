@@ -1,3 +1,43 @@
+.header .pure-menu-heading.menu-link{
+	display: none;
+
+	@media (max-width: 993px){
+
+		display: block;
+	}
+}
+.menu-desktop{
+	display: block;
+	z-index: 99998;
+	right: 0;
+	top: 0;
+	position: fixed;
+		background: #fff;
+
+	li{
+		list-style: none;
+		text-transform: uppercase;
+		display: inline-block;
+		padding: 20px 15px;
+		a{
+			color: #077f42;
+			font-style: normal;
+			text-decoration: none;
+			font-size: 12px;
+			font-weight: 500;
+		}
+		&:first-child{
+			padding-left: 30px;
+		}
+		&:last-child{
+			padding-right: 30px;
+		}
+	}
+	@media (max-width: 993px){
+
+		display: none;
+	}
+}
 .pure-menu.pure-menu-fixed{
 	z-index: 99999;
 }

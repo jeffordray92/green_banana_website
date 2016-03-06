@@ -109,7 +109,7 @@
     width: 100%;
     padding: 12px 110px 12px 180px;
     background: #fff;
-    z-index: 9;
+    z-index: 99999;
     transform: translate(0, -72px);
     transition: all 0.5s ease;
 
@@ -200,7 +200,7 @@
 
     @media (max-width: 640px){
         padding: 110px 50px 30px;
-        transform: translate(0, -500px);
+        transform: translate(0, -530px);
     }
 
 

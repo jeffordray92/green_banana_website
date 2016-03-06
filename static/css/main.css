@@ -566,11 +566,61 @@ button:hover {
 }
 
 /* line 1, ../../sass/presets/_menu.scss */
+.header .pure-menu-heading.menu-link {
+  display: none;
+}
+@media (max-width: 993px) {
+  /* line 1, ../../sass/presets/_menu.scss */
+  .header .pure-menu-heading.menu-link {
+    display: block;
+  }
+}
+
+/* line 9, ../../sass/presets/_menu.scss */
+.menu-desktop {
+  display: block;
+  z-index: 99998;
+  right: 0;
+  top: 0;
+  position: fixed;
+  background: #fff;
+}
+/* line 17, ../../sass/presets/_menu.scss */
+.menu-desktop li {
+  list-style: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 20px 15px;
+}
+/* line 22, ../../sass/presets/_menu.scss */
+.menu-desktop li a {
+  color: #077f42;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+}
+/* line 29, ../../sass/presets/_menu.scss */
+.menu-desktop li:first-child {
+  padding-left: 30px;
+}
+/* line 32, ../../sass/presets/_menu.scss */
+.menu-desktop li:last-child {
+  padding-right: 30px;
+}
+@media (max-width: 993px) {
+  /* line 9, ../../sass/presets/_menu.scss */
+  .menu-desktop {
+    display: none;
+  }
+}
+
+/* line 41, ../../sass/presets/_menu.scss */
 .pure-menu.pure-menu-fixed {
   z-index: 99999;
 }
 
-/* line 5, ../../sass/presets/_menu.scss */
+/* line 45, ../../sass/presets/_menu.scss */
 .hidden-menu {
   position: fixed;
   height: 100%;
@@ -583,7 +633,7 @@ button:hover {
   overflow: auto;
 }
 
-/* line 17, ../../sass/presets/_menu.scss */
+/* line 57, ../../sass/presets/_menu.scss */
 .menu-wrap {
   background: rgba(34, 34, 34, 0.5);
   position: relative;
@@ -595,7 +645,7 @@ button:hover {
   height: 100%;
   overflow-y: scroll;
 }
-/* line 27, ../../sass/presets/_menu.scss */
+/* line 67, ../../sass/presets/_menu.scss */
 .menu-wrap ul {
   padding: 0;
   width: 100%;
@@ -603,30 +653,30 @@ button:hover {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 34, ../../sass/presets/_menu.scss */
+/* line 74, ../../sass/presets/_menu.scss */
 .menu-wrap li {
   list-style: none;
   line-height: 2;
 }
-/* line 37, ../../sass/presets/_menu.scss */
+/* line 77, ../../sass/presets/_menu.scss */
 .menu-wrap li a {
   color: #fff;
   text-decoration: none;
   font-family: 'Lustria', serif;
   font-size: 200%;
 }
-/* line 43, ../../sass/presets/_menu.scss */
+/* line 83, ../../sass/presets/_menu.scss */
 .menu-wrap li a::first-letter {
   font-weight: bold;
   font-size: 130%;
 }
-/* line 49, ../../sass/presets/_menu.scss */
+/* line 89, ../../sass/presets/_menu.scss */
 .menu-wrap li a.logo-menu img {
   width: 160px;
 }
 
 @media (max-width: 480px) {
-  /* line 65, ../../sass/presets/_menu.scss */
+  /* line 105, ../../sass/presets/_menu.scss */
   .menu-wrap li a.logo-menu {
     visibility: hidden;
   }
@@ -735,7 +785,7 @@ button:hover {
   width: 100%;
   padding: 12px 110px 12px 180px;
   background: #fff;
-  z-index: 9;
+  z-index: 99999;
   transform: translate(0, -72px);
   transition: all 0.5s ease;
 }
@@ -832,7 +882,7 @@ button:hover {
   /* line 107, ../../sass/presets/_header.scss */
   .booking {
     padding: 110px 50px 30px;
-    transform: translate(0, -500px);
+    transform: translate(0, -530px);
   }
 }
 
