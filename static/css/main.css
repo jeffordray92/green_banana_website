@@ -966,27 +966,35 @@ button:hover {
 
 /* line 11, ../../sass/presets/_splash.scss */
 .splash-container {
+  display: table;
+  background: #000;
+}
+/* line 15, ../../sass/presets/_splash.scss */
+.splash-container .before {
   background: repeat, url(../img/bg/open.jpg) no-repeat;
   background-size: cover;
-  display: table;
-}
-/* line 16, ../../sass/presets/_splash.scss */
-.splash-container:after {
-  background: #000;
   content: "";
   height: 100%;
   width: 100%;
-  -webkit-mix-blend-mode: soft-light;
-  -moz-mix-blend-mode: soft-light;
-  -o-mix-blend-mode: soft-light;
-  mix-blend-mode: soft-light;
   z-index: 99;
   position: absolute;
   top: 0;
   left: 0;
 }
+/* line 26, ../../sass/presets/_splash.scss */
+.splash-container .after {
+  background: #000;
+  content: "";
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.25;
+}
 
-/* line 32, ../../sass/presets/_splash.scss */
+/* line 43, ../../sass/presets/_splash.scss */
 .splash-logo {
   width: 150px;
   position: absolute;
@@ -997,13 +1005,13 @@ button:hover {
   z-index: 110;
 }
 @media (max-height: 480px) and (orientation: landscape) {
-  /* line 32, ../../sass/presets/_splash.scss */
+  /* line 43, ../../sass/presets/_splash.scss */
   .splash-logo {
     display: none;
   }
 }
 
-/* line 47, ../../sass/presets/_splash.scss */
+/* line 58, ../../sass/presets/_splash.scss */
 .splash-small {
   font-family: 'Lora', serif;
   font-style: italic;
@@ -1014,7 +1022,7 @@ button:hover {
   width: 100%;
   display: block;
 }
-/* line 57, ../../sass/presets/_splash.scss */
+/* line 68, ../../sass/presets/_splash.scss */
 .splash-small:before {
   position: absolute;
   content: " ";
@@ -1024,7 +1032,7 @@ button:hover {
   background: #fff;
   top: 10px;
 }
-/* line 67, ../../sass/presets/_splash.scss */
+/* line 78, ../../sass/presets/_splash.scss */
 .splash-small:after {
   position: absolute;
   content: " ";
@@ -1035,7 +1043,7 @@ button:hover {
   top: 10px;
 }
 
-/* line 78, ../../sass/presets/_splash.scss */
+/* line 89, ../../sass/presets/_splash.scss */
 .splash-head {
   border: none;
   border-radius: 0;
@@ -1046,13 +1054,13 @@ button:hover {
   font-family: 'Lustria', serif;
   letter-spacing: 0.3em;
 }
-/* line 88, ../../sass/presets/_splash.scss */
+/* line 99, ../../sass/presets/_splash.scss */
 .splash-head strong {
   font-weight: normal;
   font-size: 120%;
 }
 
-/* line 94, ../../sass/presets/_splash.scss */
+/* line 105, ../../sass/presets/_splash.scss */
 .splash-subhead {
   text-transform: none;
   font-family: 'Lustria', serif;
@@ -1060,7 +1068,7 @@ button:hover {
   letter-spacing: 0.3em;
 }
 
-/* line 101, ../../sass/presets/_splash.scss */
+/* line 112, ../../sass/presets/_splash.scss */
 .discover {
   position: absolute;
   bottom: 20px;
@@ -1080,37 +1088,37 @@ button:hover {
 }
 
 @media (max-width: 1199px) {
-  /* line 123, ../../sass/presets/_splash.scss */
+  /* line 134, ../../sass/presets/_splash.scss */
   .splash {
     width: 400px;
   }
 }
 @media (max-width: 480px) {
-  /* line 130, ../../sass/presets/_splash.scss */
+  /* line 141, ../../sass/presets/_splash.scss */
   .splash {
     width: 310px;
   }
 
-  /* line 136, ../../sass/presets/_splash.scss */
+  /* line 147, ../../sass/presets/_splash.scss */
   .splash-small:before {
     width: 28%;
   }
-  /* line 140, ../../sass/presets/_splash.scss */
+  /* line 151, ../../sass/presets/_splash.scss */
   .splash-small:after {
     width: 28%;
   }
 }
 @media (max-width: 320px) {
-  /* line 148, ../../sass/presets/_splash.scss */
+  /* line 159, ../../sass/presets/_splash.scss */
   .splash {
     width: 210px;
   }
 
-  /* line 154, ../../sass/presets/_splash.scss */
+  /* line 165, ../../sass/presets/_splash.scss */
   .splash-small:before {
     width: 20%;
   }
-  /* line 158, ../../sass/presets/_splash.scss */
+  /* line 169, ../../sass/presets/_splash.scss */
   .splash-small:after {
     width: 20%;
   }

@@ -9,23 +9,34 @@
 }
 
 .splash-container{
-	background:  repeat, url(../img/bg/open.jpg)  no-repeat;
-	background-size:  cover;
     display: table;
+    background: #000;
 
-    &:after{
-        background: #000;
+    .before{
+        background:  repeat, url(../img/bg/open.jpg)  no-repeat;
+        background-size:  cover;
         content: "";
         height: 100%;
         width: 100%;
-        -webkit-mix-blend-mode: soft-light;
-        -moz-mix-blend-mode: soft-light;
-        -o-mix-blend-mode: soft-light;
-        mix-blend-mode: soft-light;
         z-index: 99;
         position: absolute;
         top: 0;
         left: 0;
+    }
+    .after{
+        background: #000;
+        content: "";
+        height: 100%;
+        width: 100%;
+        // -webkit-mix-blend-mode: soft-light;
+        // -moz-mix-blend-mode: soft-light;
+        // -o-mix-blend-mode: soft-light;
+        // mix-blend-mode: soft-light;
+        z-index: 99;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.25;
     }
 }
 

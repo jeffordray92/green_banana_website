@@ -241,6 +241,15 @@ function bookNow(){
      });
 }
 
+function blurBG(){
+
+    $('.splash-container .before').foggy({
+       blurRadius: 5,          // In pixels.
+       opacity: 0.7,           // Falls back to a filter for IE.
+       cssFilterSupport: true  // Use "-webkit-filter" where available.
+    });
+}
+
 $(document).ready(function() {
     misc();
     scrollSmooth(); 
@@ -249,6 +258,7 @@ $(document).ready(function() {
     tabs();
     bookNow();
     isotoper();
+    blurBG();
 });
 
 $(window).load(function() {
