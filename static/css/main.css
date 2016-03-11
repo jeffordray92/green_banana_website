@@ -1599,6 +1599,50 @@ body {
   text-decoration: none;
 }
 
+/* line 1, ../../sass/presets/_table.scss */
+.table-wrap {
+  margin-top: 15px;
+}
+/* line 3, ../../sass/presets/_table.scss */
+.table-wrap .pure-table {
+  width: 100%;
+  letter-spacing: normal;
+  border: none;
+  font-size: 12px;
+}
+/* line 9, ../../sass/presets/_table.scss */
+.table-wrap .pure-table td {
+  line-height: 18px;
+  border-left: 0;
+  border-bottom: 1px solid #cbcbcb;
+  width: 30%;
+}
+/* line 15, ../../sass/presets/_table.scss */
+.table-wrap .pure-table td:first-child {
+  padding-left: 0;
+  font-weight: 700;
+}
+/* line 19, ../../sass/presets/_table.scss */
+.table-wrap .pure-table td:last-child {
+  padding-right: 0;
+}
+/* line 23, ../../sass/presets/_table.scss */
+.table-wrap .pure-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* line 29, ../../sass/presets/_table.scss */
+.detail-link {
+  display: block;
+  color: #077F42;
+  font-size: 12px;
+  font-weight: 500;
+  /* text-transform: uppercase; */
+  font-style: normal;
+  text-decoration: none;
+  margin: 10px 0 0;
+}
+
 /* line 2, ../../sass/presets/_tabs.scss */
 .bg-color {
   transition-duration: .5s;
